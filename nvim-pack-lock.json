@@ -1,0 +1,77 @@
+{
+  "plugins": {
+    "arrow.nvim": {
+      "rev": "6e0f726f55f99332dd726a53effd6813786b6d49",
+      "src": "https://github.com/otavioschwanck/arrow.nvim"
+    },
+    "blink-go-import.nvim": {
+      "rev": "c3e59c9503e7c1061dff3af95a54fbeb3bbdb60f",
+      "src": "https://github.com/edte/blink-go-import.nvim"
+    },
+    "blink.cmp": {
+      "rev": "8a2060dff4e68ac17f1c92aed526c76fb0c1ac2f",
+      "src": "https://github.com/saghen/blink.cmp",
+      "version": "1.0.0 - 2.0.0"
+    },
+    "colorblocks.nvim": {
+      "rev": "93545d81b957e0d208d9f671c45d6fa61f1ba952",
+      "src": "https://github.com/Bishop-Fox/colorblocks.nvim"
+    },
+    "friendly-snippets": {
+      "rev": "6cd7280adead7f586db6fccbd15d2cac7e2188b9",
+      "src": "https://github.com/rafamadriz/friendly-snippets"
+    },
+    "lualine.nvim": {
+      "rev": "47f91c416daef12db467145e16bed5bbfe00add8",
+      "src": "https://github.com/nvim-lualine/lualine.nvim"
+    },
+    "multicursor.nvim": {
+      "rev": "704b99f10a72cc05d370cfeb294ff83412a8ab55",
+      "src": "https://github.com/jake-stewart/multicursor.nvim"
+    },
+    "nvim-file-location": {
+      "rev": "26ede92a734f2b133b362104da66c4942137d988",
+      "src": "https://github.com/diegoulloao/nvim-file-location"
+    },
+    "nvim-treesitter": {
+      "rev": "7caec274fd19c12b55902a5b795100d21531391f",
+      "src": "https://github.com/nvim-treesitter/nvim-treesitter"
+    },
+    "nvim-web-devicons": {
+      "rev": "d7462543c9e366c0d196c7f67a945eaaf5d99414",
+      "src": "https://github.com/nvim-tree/nvim-web-devicons"
+    },
+    "render-markdown.nvim": {
+      "rev": "e3c18ddd27a853f85a6f513a864cf4f2982b9f26",
+      "src": "https://github.com/MeanderingProgrammer/render-markdown.nvim"
+    },
+    "smart-splits.nvim": {
+      "rev": "12426763591f06b865c20990d8423345ea96d44f",
+      "src": "https://github.com/mrjones2014/smart-splits.nvim"
+    },
+    "snacks.nvim": {
+      "rev": "ad9ede6a9cddf16cedbd31b8932d6dcdee9b716e",
+      "src": "https://github.com/folke/snacks.nvim"
+    },
+    "submode.nvim": {
+      "rev": "d3cd2ceed6e2379caba6ec2e75dc50a9a832be63",
+      "src": "https://github.com/pogyomo/submode.nvim"
+    },
+    "tabnine-nvim": {
+      "rev": "d1a470158b5fa55f393107101b89c6c407d44f22",
+      "src": "https://github.com/codota/tabnine-nvim"
+    },
+    "targets.vim": {
+      "rev": "6325416da8f89992b005db3e4517aaef0242602e",
+      "src": "https://github.com/wellle/targets.vim"
+    },
+    "vim-moonfly-colors": {
+      "rev": "d11b3d04cc1cb71a778d67a4df73283a5a6d66f4",
+      "src": "https://github.com/bluz71/vim-moonfly-colors"
+    },
+    "which-key.nvim": {
+      "rev": "3aab2147e74890957785941f0c1ad87d0a44c15a",
+      "src": "https://github.com/folke/which-key.nvim"
+    }
+  }
+}
