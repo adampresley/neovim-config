@@ -17,6 +17,41 @@ mv ~/.config/nvim ~/.config/nvim.bak
 git clone git@github.com:adampresley/neovim-config.git ~/.config/nvim
 ```
 
+## About
+
+- Theme: **bluz71/vim-moonfly-colors**
+- Settings:
+    - Incremental search and smartcase 
+    - Remember last cursor location 
+    - Relative numbers by default (with key to toggle to absolute)
+    - Using native LSP 
+    - Wordwrap enabled locally for Markdown, text, and gitcommits 
+- LSP 
+    - Bash 
+    - CSS 
+    - Go 
+    - HTML
+    - JSON 
+    - Lua 
+    - Python
+    - Typescript/Javascript
+    - YAML
+- Plugins
+    - nvim-web-devicons
+    - arrow 
+    - blink
+    - colorblocks
+    - lualine
+    - multicursor
+    - nvim-file-location
+    - nvim-treesitter
+    - render-markdown
+    - smart-splits
+    - snacks
+    - tabnine (I have a Pro license)
+    - targets
+    - which-key
+
 ## Screenshots
 
 _2026 screenshots_
