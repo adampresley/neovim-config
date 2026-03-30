@@ -7,7 +7,7 @@ My personal 2026 Neovim configuration, built around Neovim `0.12.0`.
 Check the config out directly into `~/.config/nvim`:
 
 ```bash
-git clone <your-repo-url> ~/.config/nvim
+git clone git@github.com:adampresley/neovim-config.git ~/.config/nvim
 ```
 
 If you already have a Neovim config there, move it out of the way first:
