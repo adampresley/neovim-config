@@ -16,7 +16,7 @@ Snacks.setup({
    scope = { enabled = true },
    scratch = { enabled = true },
    scroll = { enabled = true },
-   statuscolumn = { enabled = true },
+   statuscolumn = { enabled = false },
    terminal = { enabled = true },
    toggle = { enabled = true },
    words = { enabled = false },
@@ -103,7 +103,7 @@ Snacks.setup({
             git_status = true,
             git_status_open = false,
             git_untracked = true,
-            jump = { close = true },
+            jump = { close = false },
             tree = true,
             watch = true,
             exclude = {
