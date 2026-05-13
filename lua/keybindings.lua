@@ -25,8 +25,8 @@ vim.keymap.set("v", "K", ":m-2<CR>gv=gv")
 --
 -- Wrap stuff
 --
-vim.keymap.set("v", '"', 'c""<Esc>P', { desc = "Wrap in quotes" })
-vim.keymap.set("v", "'", "c''<Esc>P", { desc = "Wrap in single quotes" })
+vim.keymap.set("v", '<leader>"', 'c""<Esc>P', { desc = "Wrap in quotes" })
+vim.keymap.set("v", "<leader>'", "c''<Esc>P", { desc = "Wrap in single quotes" })
 
 --
 -- Joining
