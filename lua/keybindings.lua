@@ -23,6 +23,12 @@ vim.keymap.set("v", "J", ":m'>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m-2<CR>gv=gv")
 
 --
+-- Wrap stuff
+--
+vim.keymap.set("v", '"', 'c""<Esc>P')
+vim.keymap.set("v", "'", "c''<Esc>P")
+
+--
 -- Joining
 --
 vim.keymap.set("n", "J", "mzJ`z", { desc = "Join lines" })
