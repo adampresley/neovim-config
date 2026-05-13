@@ -45,9 +45,17 @@
       "rev": "d7462543c9e366c0d196c7f67a945eaaf5d99414",
       "src": "https://github.com/nvim-tree/nvim-web-devicons"
     },
+    "plenary.nvim": {
+      "rev": "74b06c6c75e4eeb3108ec01852001636d85a932b",
+      "src": "https://github.com/nvim-lua/plenary.nvim"
+    },
     "render-markdown.nvim": {
       "rev": "e3c18ddd27a853f85a6f513a864cf4f2982b9f26",
       "src": "https://github.com/MeanderingProgrammer/render-markdown.nvim"
+    },
+    "scratchpad.nvim": {
+      "rev": "05d7f8e285a927355de62a3c3b2b5949f4def562",
+      "src": "https://github.com/athar-qadri/scratchpad.nvim"
     },
     "smart-splits.nvim": {
       "rev": "12426763591f06b865c20990d8423345ea96d44f",
