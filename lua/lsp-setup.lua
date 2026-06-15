@@ -8,10 +8,12 @@ vim.lsp
        "html",
        "jsonls",
        "lua_ls",
+       "ols",
        "pyright",
        "svelte",
        "ts_ls",
        "yamlls",
+       "zls",
     })
 
 vim.lsp
@@ -26,4 +28,16 @@ vim.lsp.config('clangd', {
       "--clang-tidy", "--log=verbose",
       "--fallback-style=webkit" },
    filetypes = { "c", "cpp", "objc", "objcpp", "h" },
+})
+
+vim.lsp.config('ols', {
+   cmd = { "ols", "--stdio" },
+   filetypes = { "odin" },
+   root_markers = { ".git", "ols.json" },
+})
+
+vim.lsp.config('zls', {
+   cmd = { 'zls' },
+   filetypes = { 'zig' },
+   root_markers = { 'build.zig' },
 })
