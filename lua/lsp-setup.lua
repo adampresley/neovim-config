@@ -41,3 +41,11 @@ vim.lsp.config('zls', {
    filetypes = { 'zig' },
    root_markers = { 'build.zig' },
 })
+
+vim.lsp.config('c3lsp', {
+   cmd = { 'c3lsp' },
+   filetypes = { "c3", "c3i" },
+   root_markers = { ".git" },
+})
+
+vim.lsp.enable("c3lsp")

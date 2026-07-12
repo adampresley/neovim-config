@@ -9,13 +9,21 @@
       "src": "https://github.com/edte/blink-go-import.nvim"
     },
     "blink.cmp": {
-      "rev": "8a2060dff4e68ac17f1c92aed526c76fb0c1ac2f",
+      "rev": "78336bc89ee5365633bcf754d93df01678b5c08f",
       "src": "https://github.com/saghen/blink.cmp",
       "version": "1.0.0 - 2.0.0"
+    },
+    "c3.vim": {
+      "rev": "ecf1c04d9ca5e8ffefe8f9c22724528e49f627e2",
+      "src": "https://github.com/code5717/c3.vim"
     },
     "colorblocks.nvim": {
       "rev": "93545d81b957e0d208d9f671c45d6fa61f1ba952",
       "src": "https://github.com/Bishop-Fox/colorblocks.nvim"
+    },
+    "cyberdream.nvim": {
+      "rev": "b9cc88378b776f33d3ea77164716f37c3f13ef72",
+      "src": "https://github.com/scottmckendry/cyberdream.nvim"
     },
     "friendly-snippets": {
       "rev": "6cd7280adead7f586db6fccbd15d2cac7e2188b9",
@@ -26,7 +34,7 @@
       "src": "https://github.com/f-person/git-blame.nvim"
     },
     "lualine.nvim": {
-      "rev": "47f91c416daef12db467145e16bed5bbfe00add8",
+      "rev": "221ce6b2d999187044529f49da6554a92f740a96",
       "src": "https://github.com/nvim-lualine/lualine.nvim"
     },
     "multicursor.nvim": {
@@ -38,19 +46,23 @@
       "src": "https://github.com/diegoulloao/nvim-file-location"
     },
     "nvim-treesitter": {
-      "rev": "7caec274fd19c12b55902a5b795100d21531391f",
+      "rev": "4916d6592ede8c07973490d9322f187e07dfefac",
       "src": "https://github.com/nvim-treesitter/nvim-treesitter"
     },
     "nvim-web-devicons": {
-      "rev": "d7462543c9e366c0d196c7f67a945eaaf5d99414",
+      "rev": "dad71387de386a946b123079d0e53f23028f3abd",
       "src": "https://github.com/nvim-tree/nvim-web-devicons"
+    },
+    "oxocarbon.nvim": {
+      "rev": "cf49e389c22dab56224e43ae16422ddcd5b61b28",
+      "src": "https://github.com/nyoom-engineering/oxocarbon.nvim"
     },
     "plenary.nvim": {
       "rev": "74b06c6c75e4eeb3108ec01852001636d85a932b",
       "src": "https://github.com/nvim-lua/plenary.nvim"
     },
     "render-markdown.nvim": {
-      "rev": "e3c18ddd27a853f85a6f513a864cf4f2982b9f26",
+      "rev": "f422cb5c6855f150e2ddcfaf44e7157b98b34f6a",
       "src": "https://github.com/MeanderingProgrammer/render-markdown.nvim"
     },
     "scratchpad.nvim": {
@@ -58,11 +70,11 @@
       "src": "https://github.com/athar-qadri/scratchpad.nvim"
     },
     "smart-splits.nvim": {
-      "rev": "12426763591f06b865c20990d8423345ea96d44f",
+      "rev": "ebf4d8bbc16570817c0f5275468466b9d00b8d7d",
       "src": "https://github.com/mrjones2014/smart-splits.nvim"
     },
     "snacks.nvim": {
-      "rev": "ad9ede6a9cddf16cedbd31b8932d6dcdee9b716e",
+      "rev": "882c996cf28183f4d63640de0b4c02ec886d01f2",
       "src": "https://github.com/folke/snacks.nvim"
     },
     "statuscol.nvim": {
@@ -74,7 +86,7 @@
       "src": "https://github.com/pogyomo/submode.nvim"
     },
     "tabnine-nvim": {
-      "rev": "d1a470158b5fa55f393107101b89c6c407d44f22",
+      "rev": "c88682f818f3252357c95cd6353c6e611d7d29d8",
       "src": "https://github.com/codota/tabnine-nvim"
     },
     "targets.vim": {
@@ -82,11 +94,11 @@
       "src": "https://github.com/wellle/targets.vim"
     },
     "vim-moonfly-colors": {
-      "rev": "d11b3d04cc1cb71a778d67a4df73283a5a6d66f4",
+      "rev": "261664f92ed51cf0c077555b2d4b2530307eac17",
       "src": "https://github.com/bluz71/vim-moonfly-colors"
     },
     "wayfinder.nvim": {
-      "rev": "b4a1baa078c7815f23d3a403321fdf778adfbc25",
+      "rev": "8d7e68151428554c0530032b90659f3c0008f3a9",
       "src": "https://github.com/error311/wayfinder.nvim"
     },
     "which-key.nvim": {
