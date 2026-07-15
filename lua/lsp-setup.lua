@@ -1,6 +1,7 @@
 vim.lsp
     .enable({
        "bashls",
+       "c3lsp",
        "clangd",
        "cssls",
        "docker_compose_language_service",
@@ -43,9 +44,37 @@ vim.lsp.config('zls', {
 })
 
 vim.lsp.config('c3lsp', {
-   cmd = { 'c3lsp' },
+   cmd = {
+      'c3lsp',
+      '-c3c-path',
+      '/opt/homebrew/bin/c3c',
+      '-stdlib-path',
+      '/opt/homebrew/Cellar/c3c/HEAD-9516a39/lib/c3/std',
+   },
    filetypes = { "c3", "c3i" },
-   root_markers = { ".git" },
+   root_markers = { "project.json", ".git" },
 })
 
-vim.lsp.enable("c3lsp")
+-- vim.lsp.enable("c3lsp")
+
+-- Experimental c3_ls test config.
+-- To try it, comment out the c3lsp config/enable block above, then uncomment this
+-- block and restart Neovim. Check :LspInfo and ~/.local/state/nvim/lsp.log.
+--
+-- vim.lsp.config('c3_ls', {
+--    cmd = {
+--       '/Users/adampresley/code/c3_ls/build/c3_ls',
+--       '--compiler-path',
+--       '/opt/homebrew/bin/c3c',
+--       '--stdlib-path',
+--       '/opt/homebrew/Cellar/c3c/HEAD-9516a39/lib/c3/std',
+--       '--log-path',
+--       vim.fn.stdpath('state') .. '/c3_ls.log',
+--       '--log-level',
+--       'DEBUG',
+--    },
+--    filetypes = { "c3", "c3i" },
+--    root_markers = { "project.json", ".git" },
+-- })
+--
+-- vim.lsp.enable("c3_ls")
