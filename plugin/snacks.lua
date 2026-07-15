@@ -1,6 +1,25 @@
 vim.pack.add({ "https://github.com/folke/snacks.nvim" })
 local Snacks = require("snacks")
 
+local function explorer_focus()
+   for _, win in ipairs(vim.api.nvim_list_wins()) do
+      local buf = vim.api.nvim_win_get_buf(win)
+      local ft = vim.bo[buf].filetype
+
+      if ft == "snacks_picker_list" then
+         if vim.api.nvim_get_current_win() ~= win then
+            vim.api.nvim_set_current_win(win)
+         else
+            Snacks.explorer()
+         end
+
+         return
+      end
+   end
+
+   Snacks.explorer()
+end
+
 Snacks.setup({
    animate = { enabled = true },
    bigfile = { enabled = true },
@@ -120,7 +139,8 @@ Snacks.setup({
 
 local keymaps = {
    -- Explorer and pickers
-   { "<leader>e",  function() Snacks.explorer() end,                                           desc = "File Explorer" },
+   -- { "<leader>e",  function() Snacks.explorer() end,                                           desc = "File Explorer" },
+   { "<leader>e",  function() explorer_focus() end,                                            desc = "File Explorer" },
    { "<leader>ff", function() Snacks.picker.smart() end,                                       desc = "Smart Find Files" },
    { "<leader>fb", function() Snacks.picker.buffers() end,                                     desc = "Buffers" },
    { "<leader>fw", function() Snacks.picker.grep() end,                                        desc = "Grep" },
