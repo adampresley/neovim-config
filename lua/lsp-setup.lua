@@ -43,6 +43,7 @@ vim.lsp.config('zls', {
    root_markers = { 'build.zig' },
 })
 
+-- https://github.com/tonis2/lsp
 vim.lsp.config('c3lsp', {
    cmd = {
       '/Users/adampresley/code/c3-lsp-2/build/lsp',
