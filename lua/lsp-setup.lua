@@ -45,15 +45,31 @@ vim.lsp.config('zls', {
 
 vim.lsp.config('c3lsp', {
    cmd = {
-      'c3lsp',
-      '-c3c-path',
-      '/opt/homebrew/bin/c3c',
-      '-stdlib-path',
+      '/Users/adampresley/code/c3-lsp-2/build/lsp',
+      '--stdlib-path',
       '/opt/homebrew/Cellar/c3c/HEAD-9516a39/lib/c3/std',
+      '--compiler-path',
+      '/opt/homebrew/bin/c3c',
+      "--diagnostics-delay",
+      "500",
    },
    filetypes = { "c3", "c3i" },
-   root_markers = { "project.json", ".git" },
+   root_markers = { "project.json" },
 })
+
+vim.lsp.enable("c3lsp")
+
+-- vim.lsp.config('c3lsp', {
+--    cmd = {
+--       'c3lsp',
+--       '-c3c-path',
+--       '/opt/homebrew/bin/c3c',
+--       '-stdlib-path',
+--       '/opt/homebrew/Cellar/c3c/HEAD-9516a39/lib/c3/std',
+--    },
+--    filetypes = { "c3", "c3i" },
+--    root_markers = { "project.json", ".git" },
+-- })
 
 -- vim.lsp.enable("c3lsp")
 
