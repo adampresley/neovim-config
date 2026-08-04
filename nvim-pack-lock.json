@@ -37,6 +37,10 @@
       "rev": "221ce6b2d999187044529f49da6554a92f740a96",
       "src": "https://github.com/nvim-lualine/lualine.nvim"
     },
+    "marks.nvim": {
+      "rev": "f353e8c08c50f39e99a9ed474172df7eddd89b72",
+      "src": "https://github.com/chentoast/marks.nvim"
+    },
     "multicursor.nvim": {
       "rev": "704b99f10a72cc05d370cfeb294ff83412a8ab55",
       "src": "https://github.com/jake-stewart/multicursor.nvim"
