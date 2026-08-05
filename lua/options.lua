@@ -1,11 +1,14 @@
 vim.opt.autoread = true
 vim.opt.cmdheight = 0
 vim.opt.cursorline = true
+vim.opt.expandtab = true
 vim.opt.laststatus = 3
 vim.opt.number = true
 vim.opt.relativenumber = true
+vim.opt.shiftwidth = 3
 vim.opt.signcolumn = "yes:2"
-vim.opt.softtabstop = 3
+vim.opt.smartindent = true
+vim.opt.softtabstop = 0
 vim.opt.syntax = "on"
 vim.opt.tabstop = 3
 vim.opt.undofile = true
