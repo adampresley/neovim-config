@@ -1,5 +1,7 @@
+local group = vim.api.nvim_create_augroup("RestoreLastPosition", { clear = true })
+
 vim.api.nvim_create_autocmd("BufReadPost", {
-   group = augroup,
+   group = group,
    desc = "Restore last cursor position",
    callback = function()
       if vim.o.diff then -- except in diff mode

@@ -11,7 +11,10 @@ vim.keymap.set("n", '\\', "<C-w>s", { desc = "Split horizontal" })
 vim.keymap.set("n", "<leader>bC", ":%bd!<cr>", { desc = "Close all buffers" })
 
 --
--- Vmap for maintain Visual Mode after shifting > and <
+-- Clos
+
+--
+-- vmap to maintain visual mode after shifting < and >
 --
 vim.keymap.set("v", "<", "<gv")
 vim.keymap.set("v", ">", ">gv")
@@ -19,24 +22,13 @@ vim.keymap.set("v", ">", ">gv")
 --
 -- Move lines up and down in visual mode
 --
-vim.keymap.set("v", "J", ":m'>+1<CR>gv=gv")
-vim.keymap.set("v", "K", ":m-2<CR>gv=gv")
-
---
--- Wrap stuff
---
-vim.keymap.set("v", '<leader>"', 'c""<Esc>P', { desc = "Wrap in quotes" })
-vim.keymap.set("v", "<leader>'", "c''<Esc>P", { desc = "Wrap in single quotes" })
-
---
--- Joining
---
-vim.keymap.set("n", "J", "mzJ`z", { desc = "Join lines" })
+vim.keymap.set("v", "J", ":m'>+1<cr>gv=gv")
+vim.keymap.set("v", "K", ":m-2<cr>gv=gv")
 
 --
 -- Line number toggling
 --
-vim.keymap.set("n", "<C-n><C-n>", ":set relativenumber!<CR>", { desc = "Toggle relative line numbers" })
+vim.keymap.set("n", "<c-n><c-n>", ":set relativenumber!<cr>", { desc = "Toggle relative line numbers" })
 
 --
 -- Lsp keybindings
@@ -47,9 +39,6 @@ vim.keymap.set("n", "<leader>rn", "<cmd>lua vim.lsp.buf.rename()<cr>", { desc = 
 vim.keymap.set("n", "<leader>dj", "<cmd>lua vim.diagnostic.jump({ count = 1 })<cr>", { desc = "Go to next diagnostic" })
 -- vim.keymap.set("n", "<leader>dk", "<cmd>lua vim.diagnostic.goto_prev()<cr>",
 vim.keymap.set("n", "<leader>dk", "<cmd>lua vim.diagnostic.jump({ count = -1 })<cr>",
-   { desc = "Go to previous diagnostic" })
-
---
--- vim.pack keybindings
---
-vim.keymap.set("n", "<leader>pu", "<cmd>lua vim.pack.update()<cr>", { desc = "Update pack" })
+	{ desc = "Go to previous diagnostic" })
+vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "Go to definition" })
+vim.keymap.set("n", "gi", vim.lsp.buf.implementation, { desc = "Go to implementation" })

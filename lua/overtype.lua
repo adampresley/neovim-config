@@ -15,3 +15,4 @@ function M.setup(chars)
 end
 
 return M
+

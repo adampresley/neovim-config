@@ -1,8 +1,10 @@
 --
 -- Turn on wordwrap based on file type
 --
+local group = vim.api.nvim_create_augroup("WordWrap", { clear = true })
+
 vim.api.nvim_create_autocmd("FileType", {
-   group = augroup,
+   group = group,
    pattern = { "markdown", "text", "gitcommit" },
    callback = function()
       vim.opt_local.wrap = true

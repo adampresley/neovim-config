@@ -9,7 +9,7 @@ vim.cmd.hi("link", "MultiCursorCursor", "Cursor")
 vim.cmd.hi("link", "MultiCursorVisual", "Visual")
 
 vim.keymap.set("n", "<esc>", function()
-   if mc.hasCursors() then mc.clearCursors() end
+	if mc.hasCursors() then mc.clearCursors() end
 end)
 
 -- add cursors above/below the main cursor

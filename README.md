@@ -19,7 +19,7 @@ git clone git@github.com:adampresley/neovim-config.git ~/.config/nvim
 
 ## About
 
-- Theme: **bluz71/vim-moonfly-colors**
+- Theme: [cyberdream](https://github.com/scottmcendry/cyberdream.nvim)
 - Settings:
     - Incremental search and smartcase 
     - Remember last cursor location 
@@ -37,31 +37,8 @@ git clone git@github.com:adampresley/neovim-config.git ~/.config/nvim
     - Typescript/Javascript
     - YAML
 - Plugins
-    - nvim-web-devicons
-    - arrow 
-    - blink
-    - colorblocks
-    - lualine
-    - multicursor
-    - nvim-file-location
-    - nvim-treesitter
-    - render-markdown
-    - smart-splits
-    - snacks
-    - tabnine (I have a Pro license)
-    - targets
-    - which-key
-
-## Screenshots
-
-_2026 screenshots_
-
-![Editing screenshot](./screenshots/2026-screenshot-1.png)
-
-![LazyGit screenshot](./screenshots/2026-screenshot-2.png)
-
-![Snacks Explorer screenshot](./screenshots/2026-screenshot-3.png)
-
-![Terminal screenshot](./screenshots/2026-screenshot-4.png)
-
+    - Plenary
+    - Lazygit
+    - Multicursor
+    - File Location
 
