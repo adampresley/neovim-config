@@ -8,7 +8,11 @@ vim.keymap.set("n", "<C-l>", "<C-w>l", { desc = "Move right one window" })
 vim.keymap.set("n", "<leader>q", "<C-w>c", { desc = "Close window" })
 vim.keymap.set("n", "|", "<C-w>v", { desc = "Split vertical" })
 vim.keymap.set("n", '\\', "<C-w>s", { desc = "Split horizontal" })
-vim.keymap.set("n", "<leader>bC", ":%bd!<cr>", { desc = "Close all buffers" })
+vim.keymap.set("n", "<leader>bC", function()
+   vim.cmd(":bd!")
+   vim.cmd(":redraw!")
+   vim.notify("All buffers closed", vim.log.levels.INFO)
+end, { desc = "Close all buffers" })
 
 --
 -- Clos
@@ -39,6 +43,6 @@ vim.keymap.set("n", "<leader>rn", "<cmd>lua vim.lsp.buf.rename()<cr>", { desc = 
 vim.keymap.set("n", "<leader>dj", "<cmd>lua vim.diagnostic.jump({ count = 1 })<cr>", { desc = "Go to next diagnostic" })
 -- vim.keymap.set("n", "<leader>dk", "<cmd>lua vim.diagnostic.goto_prev()<cr>",
 vim.keymap.set("n", "<leader>dk", "<cmd>lua vim.diagnostic.jump({ count = -1 })<cr>",
-	{ desc = "Go to previous diagnostic" })
+   { desc = "Go to previous diagnostic" })
 vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "Go to definition" })
 vim.keymap.set("n", "gi", vim.lsp.buf.implementation, { desc = "Go to implementation" })
