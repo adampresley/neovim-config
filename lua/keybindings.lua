@@ -44,5 +44,6 @@ vim.keymap.set("n", "<leader>dk", "<cmd>lua vim.diagnostic.jump({ count = -1 })<
    { desc = "Go to previous diagnostic" })
 vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "Go to definition" })
 vim.keymap.set("n", "gi", vim.lsp.buf.implementation, { desc = "Go to implementation" })
+vim.keymap.set("n", "gr", vim.lsp.buf.references, { desc = "Get references" })
 vim.keymap.set("n", "<leader>fs", vim.lsp.buf.document_symbol, { desc = "Find symbol" })
 vim.keymap.set("n", "<leader>ws", vim.lsp.buf.workspace_symbol, { desc = "Find workspace symbol" })
