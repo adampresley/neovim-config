@@ -39,9 +39,11 @@ vim.keymap.set("n", "<c-n><c-n>", ":set relativenumber!<cr>", { desc = "Toggle r
 --
 vim.keymap.set("n", "ga", "<cmd>lua vim.lsp.buf.code_action()<cr>", { desc = "LSP actions" })
 vim.keymap.set("n", "<leader>rn", "<cmd>lua vim.lsp.buf.rename()<cr>", { desc = "Rename symbol" })
-vim.keymap.set("n", "<leader>dj", "<cmd>lua vim.diagnostic.jump({ count = 1 })<cr>", { desc = "Go to next diagnostic" })
-vim.keymap.set("n", "<leader>dk", "<cmd>lua vim.diagnostic.jump({ count = -1 })<cr>",
+vim.keymap.set("n", "<leader>dj", "<cmd>:silent lua vim.diagnostic.jump({ count = 1 })<cr>",
+   { desc = "Go to next diagnostic" })
+vim.keymap.set("n", "<leader>dk", "<cmd>:silent lua vim.diagnostic.jump({ count = -1 })<cr>",
    { desc = "Go to previous diagnostic" })
+vim.keymap.set("n", "<leader>dd", "<cmd>:silent lua vim.diagnostic.setloclist()<cr>", { desc = "Open diagnostics" })
 vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "Go to definition" })
 vim.keymap.set("n", "gi", vim.lsp.buf.implementation, { desc = "Go to implementation" })
 vim.keymap.set("n", "gr", vim.lsp.buf.references, { desc = "Get references" })
