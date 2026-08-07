@@ -13,6 +13,7 @@ vim.keymap.set("n", "<leader>bC", function()
    vim.cmd(":redraw!")
    vim.notify("All buffers closed", vim.log.levels.INFO)
 end, { desc = "Close all buffers" })
+vim.keymap.set("n", "<leader>nh", ":noh<cr>", { desc = "No highlight" })
 
 --
 -- Clos
