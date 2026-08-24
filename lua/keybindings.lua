@@ -8,15 +8,17 @@ vim.keymap.set("n", "<C-l>", "<C-w>l", { desc = "Move right one window" })
 vim.keymap.set("n", "<leader>q", "<C-w>c", { desc = "Close window" })
 vim.keymap.set("n", "|", "<C-w>v", { desc = "Split vertical" })
 vim.keymap.set("n", '\\', "<C-w>s", { desc = "Split horizontal" })
-vim.keymap.set("n", "<leader>bC", function()
-   vim.cmd(":bd!")
+vim.keymap.set("n", "<leader>bc", function()
+   vim.cmd(":%bd!")
    vim.cmd(":redraw!")
    vim.notify("All buffers closed", vim.log.levels.INFO)
 end, { desc = "Close all buffers" })
+vim.keymap.set("n", "<leader>bC", function()
+   vim.cmd(":%bd!|e#")
+   vim.cmd(":redraw!")
+   vim.notify("All other buffers closed", vim.log.levels.INFO)
+end, { desc = "Close all other buffers" })
 vim.keymap.set("n", "<leader>nh", ":noh<cr>", { desc = "No highlight" })
-
---
--- Clos
 
 --
 -- vmap to maintain visual mode after shifting < and >
