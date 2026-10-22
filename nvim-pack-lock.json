@@ -20,6 +20,10 @@
       "rev": "93545d81b957e0d208d9f671c45d6fa61f1ba952",
       "src": "git@github.com:Bishop-Fox/colorblocks.nvim"
     },
+    "conform.nvim": {
+      "rev": "016802de402556da54c36bd7359b441266b01cdd",
+      "src": "https://github.com/stevearc/conform.nvim"
+    },
     "cyberdream.nvim": {
       "rev": "b9cc88378b776f33d3ea77164716f37c3f13ef72",
       "src": "git@github.com:scottmckendry/cyberdream.nvim"

@@ -1,10 +1,6 @@
 --
 -- Windows
 --
-vim.keymap.set("n", "<C-h>", "<C-w>h", { desc = "Move left one window" })
-vim.keymap.set("n", "<C-j>", "<C-w>j", { desc = "Move down one window" })
-vim.keymap.set("n", "<C-k>", "<C-w>k", { desc = "Move up one window" })
-vim.keymap.set("n", "<C-l>", "<C-w>l", { desc = "Move right one window" })
 vim.keymap.set("n", "<leader>q", "<C-w>c", { desc = "Close window" })
 vim.keymap.set("n", "|", "<C-w>v", { desc = "Split vertical" })
 vim.keymap.set("n", '\\', "<C-w>s", { desc = "Split horizontal" })
