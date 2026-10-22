@@ -48,6 +48,11 @@
       "rev": "f353e8c08c50f39e99a9ed474172df7eddd89b72",
       "src": "git@github.com:chentoast/marks.nvim"
     },
+    "mini.completion": {
+      "rev": "0aeee1231b90d70563e24facc238ab4359b8d5fc",
+      "src": "https://github.com/nvim-mini/mini.completion",
+      "version": "'stable'"
+    },
     "multicursor.nvim": {
       "rev": "704b99f10a72cc05d370cfeb294ff83412a8ab55",
       "src": "git@github.com:jake-stewart/multicursor.nvim"
