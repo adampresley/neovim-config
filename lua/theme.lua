@@ -16,3 +16,5 @@ vim.cmd("colorscheme cyberdream")
 vim.api.nvim_set_hl(0, "PmenuBorder", {
   link = "FloatBorder",
 })
+
+vim.api.nvim_set_hl(0, "WinSeparator", { fg = "#888888", bg = "NONE" })
