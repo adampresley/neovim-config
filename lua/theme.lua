@@ -17,4 +17,14 @@ vim.api.nvim_set_hl(0, "PmenuBorder", {
   link = "FloatBorder",
 })
 
-vim.api.nvim_set_hl(0, "WinSeparator", { fg = "#888888", bg = "NONE" })
+vim.opt.fillchars:append({
+  horiz = "─",
+  vert = "│",
+  horizup = "┴",
+  horizdown = "┬",
+  vertleft = "┤",
+  vertright = "├",
+  verthoriz = "┼",
+})
+
+vim.api.nvim_set_hl(0, "WinSeparator", { fg = "#808080" })
